@@ -6,6 +6,10 @@ return {
       sort = {
         sorter = "case_sensitive",
       },
+      git = {
+        enable = true,
+        ignore = false,
+      },
       view = {
         width = 30,
       },
@@ -13,7 +17,7 @@ return {
         group_empty = true,
       },
       filters = {
-        dotfiles = true,
+        dotfiles = false,
       },
     })
   end,
