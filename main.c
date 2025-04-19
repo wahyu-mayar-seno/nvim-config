@@ -13,6 +13,7 @@ int add(int a, int b) {
 int global = 0;
 int global2 = 1;
 int global3 = 2;
+int global4 = 1233;
 int main() {
   int a;
   int b;
