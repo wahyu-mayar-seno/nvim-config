@@ -10,6 +10,7 @@ int add(int a, int b) {
   int d = 10;
   return a + b;
 }
+int global = 0;
 int main() {
   int a;
   int b;
