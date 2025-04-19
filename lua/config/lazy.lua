@@ -12,8 +12,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     os.exit(1)
   end
 end
-
-vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.o.number = true
@@ -32,6 +30,10 @@ vim.diagnostic.config({
   virtual_text = true,
   signs = true,
   underline = true,
-  update_in_insert = false,
+  update_in_insert = true,
 })
+vim.filetype.add({
+  extension = { fs = "glsl", vs = "glsl" },
+})
+vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")

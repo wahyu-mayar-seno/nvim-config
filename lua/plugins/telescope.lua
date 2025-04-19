@@ -10,5 +10,26 @@ return {
     vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
     vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
     vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
+
+    local actions = require("telescope.actions")
+
+    require("telescope").setup({
+      defaults = {
+        mappings = {
+          n = {
+            -- Navigasi custom
+            ["k"] = actions.move_selection_next,
+            ["i"] = actions.move_selection_previous,
+            ["j"] = false,
+            -- ESC via jk
+            ["jk"] = actions.close,
+
+            -- Nonaktifkan default keymap bila perlu
+            ["<Esc>"] = actions.close,
+            ["<C-c>"] = false,
+          },
+        },
+      },
+    })
   end,
 }
