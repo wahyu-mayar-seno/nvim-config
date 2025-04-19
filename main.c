@@ -11,6 +11,7 @@ int add(int a, int b) {
   return a + b;
 }
 int global = 0;
+int global2 = 1;
 int main() {
   int a;
   int b;
