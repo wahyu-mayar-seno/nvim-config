@@ -6,10 +6,10 @@ vim.keymap.set("c", "jk", "<Esc>", { noremap = true, desc = "goto normal mode" }
 -- FILE OPERATIONS
 vim.keymap.set("n", "q", ":wq<CR>", { noremap = true, desc = "save and quit" })
 vim.keymap.set("n", "<leader>wa", ":wa<CR>", { noremap = true, desc = "save all" })
-vim.keymap.set("n", "<leader>q", ":q!<CR>", { noremap = true, desc = "quit without saving" })
+vim.keymap.set("n", "<leader>qq", ":q!<CR>", { noremap = true, desc = "quit without saving" })
 vim.keymap.set("n", "<leader>noh", ":noh<CR>", { noremap = true, desc = "clear highlight" })
 vim.keymap.set("n", "<leader>wqa", ":wqa<CR>", { noremap = true, desc = "save all and quit" })
-
+vim.keymap.set("n", "<leader>qa", ":qa!<CR>", { noremap = true, desc = "no save quit all" })
 --BUFFER OPERAIONS
 vim.keymap.set("n", "<leader>bd", ":%bd<CR>", { noremap = true, desc = "delete all buffer" })
 
