@@ -2,6 +2,7 @@
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, desc = "goto normal mode" })
 vim.keymap.set("v", "jk", "<Esc>", { noremap = true, desc = "goto normal mode" })
 vim.keymap.set("c", "jk", "<Esc>", { noremap = true, desc = "goto normal mode" })
+vim.keymap.set("n", "<leader>l", "<C-v>", { noremap = true, desc = "goto normal mode" })
 
 -- FILE OPERATIONS
 vim.keymap.set("n", "q", ":wq<CR>", { noremap = true, desc = "save and quit" })
