@@ -26,6 +26,8 @@ vim.keymap.set("n", "h", "w", { noremap = true, desc = "next word" })
 vim.keymap.set("n", "a", "b", { noremap = true, desc = "previous word" })
 vim.keymap.set("n", "<leader>en", "$", { noremap = true, desc = "end of line" })
 
+vim.keymap.set("n", "<leader>ne", vim.diagnostic.goto_next, { noremap = true, desc = "goto next error" })
+
 vim.keymap.set("v", "i", "k", { noremap = true, desc = "move up" })
 vim.keymap.set("v", "j", "h", { noremap = true, desc = "move left" })
 vim.keymap.set("v", "k", "j", { noremap = true, desc = "move down" })
@@ -51,3 +53,4 @@ vim.keymap.set("n", "<leader>a", "a", { noremap = true, desc = "append mode" })
 -- CLIPBOARD
 vim.keymap.set("n", "<leader>vv", '"+p', { noremap = true, desc = "paste from clipboard" })
 vim.keymap.set("v", "<leader>cc", '"+y', { noremap = true, desc = "copy to clipboard" })
+vim.keymap.set("v", "<leader>xx", '"+d', { noremap = true, desc = "copy to clipboard" })
